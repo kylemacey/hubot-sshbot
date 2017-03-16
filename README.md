@@ -2,6 +2,10 @@
 
 An SSH based [Hubot](https://hubot.github.com) adapter to allow Hubot to be accessed from an SSH client.
 
+#### Disclaimer
+
+This adapter was built for demoing Hubot easily. It doesn't have any security measures in place (not password or public key authentication). I don't recommend using this for any real-world scenarios in its current state.
+
 ## Using this adapter
 
 Install the adapter into your Hubot.
