@@ -15,9 +15,6 @@
     "coffee-script": ">=1.2.0"
   },
   "main": "src/sshbot.coffee",
-  "scripts": {
-    "start": "bin/hubot"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kylemacey/hubot-sshbot.git"
