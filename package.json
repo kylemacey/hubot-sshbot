@@ -1,0 +1,30 @@
+{
+  "name": "hubot-sshbot",
+  "version": "0.0.1",
+  "author": "Kyle Macey <shout@kylemacey.com>",
+  "description": "A simple helpful robot for your Company",
+  "dependencies": {
+    "blessed": "~0.1.81",
+    "ssh2": "~0.5.1",
+    "parent-require": "^1.0.0"
+  },
+  "peerDependencies": {
+    "hubot": "~2.19"
+  },
+  "devDependencies": {
+    "coffee-script": ">=1.2.0"
+  },
+  "main": "src/sshbot.coffee",
+  "scripts": {
+    "start": "bin/hubot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kylemacey/hubot-sshbot.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kylemacey/hubot-sshbot/issues"
+  },
+  "homepage": "https://github.com/kylemacey/hubot-sshbot#readme"
+}
