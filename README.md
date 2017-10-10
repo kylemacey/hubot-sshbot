@@ -20,10 +20,16 @@ Specify the location of a Private Key the server can use.
 export HUBOT_SSH_HOST_KEY=~/.ssh/id_rsa
 ```
 
-Optionally set a port for the server to listen on (default to 3050).
+Optionally set a port for the server to listen on (default to `3050`).
 
 ```
 export HUBOT_SSH_PORT=22
+```
+
+And host adress (default to `"0.0.0.0"`).
+
+```
+export HUBOT_SSH_HOST="127.0.0.1"
 ```
 
 Start your Hubot.
