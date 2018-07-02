@@ -26,7 +26,7 @@ class Sshbot extends Adapter
   run: ->
     self = @
     server = new SshServer
-    server.start(@port())
+    server.start(@port(), @host())
 
     server.on "message", (stream, msg)->
       self.receive new TextMessage(stream, msg, "message-#{Date.now()}")
@@ -36,6 +36,9 @@ class Sshbot extends Adapter
 
   port: ->
     process.env.HUBOT_SSH_PORT || 3050
+
+  host: ->
+    process.env.HUBOT_SSH_HOST || '0.0.0.0'
 
 exports.use = (robot) ->
   new Sshbot robot

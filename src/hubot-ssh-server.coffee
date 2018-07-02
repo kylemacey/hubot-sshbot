@@ -101,9 +101,9 @@ class HubotSshServer
                       if response
                         stream.output.add "Hubot: #{response}"
 
-  start: (port=3050) ->
-    @server.listen port, "0.0.0.0", ->
-      console.log "Listening on #{this.address().port}"
+  start: (port = 3050, host = '0.0.0.0') ->
+    @server.listen port, host, ->
+      console.log "Listening on #{@address().port}"
 
 util.inherits(HubotSshServer, EventEmitter)
 module.exports = HubotSshServer
